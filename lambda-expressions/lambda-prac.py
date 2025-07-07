@@ -16,3 +16,10 @@ print(ans(4))
 n = [1, 2, 3, 4, 5, 6]
 even = filter(lambda x: x % 2 == 0, n)
 print(list(even))
+
+from functools import reduce
+
+# Example: Find the product of all numbers in a list
+a = [1, 2, 3, 4]
+b = reduce(lambda x, y: x * y, a)
+print(b)
